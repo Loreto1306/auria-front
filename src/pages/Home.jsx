@@ -2,7 +2,6 @@ import "./Home.css"; // aqui importa o css
 import { Link } from "react-router-dom";
 
 
-
 function Home() {
   return (
     <div>
