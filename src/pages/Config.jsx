@@ -60,7 +60,7 @@ if (usuarios.length > 0) {
       if (!window.confirm(`Deseja realmente excluir o usuário ${name}?`)) return;
 
       try {
-        const response = await fetch(`http://localhost:3000/api/users/${id}`, { // dev: http://localhost:3000/api/users/${id}
+        const response = await fetch(`https://auriadb.vercel.app/api/users/${id}`, { // dev: http://localhost:3000/api/users/${id}
           method: "DELETE",
           headers: {
             "Content-Type": "application/json"
@@ -81,7 +81,7 @@ if (usuarios.length > 0) {
     
     const handleUpdate = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/users/${usuarioSelecionado.id}`, {// dev: http://localhost:3000/api/users/${usuarioSelecionado.id}
+        const response = await fetch(`https://auriadb.vercel.app/api/users/${usuarioSelecionado.id}`, {// dev: http://localhost:3000/api/users/${usuarioSelecionado.id}
           method: "PUT",
           headers: {
             "Content-Type": "application/json"
